@@ -30,7 +30,7 @@ def main():
 
 	final_dict = collections.OrderedDict(sorted(views_dict.items(), reverse=True))
 
-	with open('/home/administrator/Documents/code/sandbox/python/lxml.html/App-V.csv', 'wb') as csvfile:
+	with open('App-V.csv', 'wb') as csvfile:
 		spamwriter = CSVUnicodeWriter(csvfile)
 		spamwriter.writerow(['Views', 'Title', 'Date', 'Replies', 'URL'])
 
